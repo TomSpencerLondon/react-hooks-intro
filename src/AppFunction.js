@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import torchOn from './images/torch-on.png';
+import torchOff from './images/torch-off.png';
 const AppFunction = () => {
   const [count, setCount] = useState(0);
   const [isOn, setIsOn ] = useState(false);
@@ -20,12 +21,15 @@ const AppFunction = () => {
     </button>
 
       <h2>Toggle Light</h2>
-      <div
+      <img
+        src={
+          isOn ? torchOn
+            : torchOff
+        }
         style={{
-          height: '50px',
-          width: '50px',
-          background: isOn ? "yellow" : "grey"
+          height: '100px',
         }}
+        alt="Flashlight"
 
         onClick={toggleLight}
       />
