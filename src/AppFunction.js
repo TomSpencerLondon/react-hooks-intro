@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const App = () => {
+const AppFunction = () => {
   const [count, setCount] = useState(0);
 
   const incrementCount = () => {
@@ -14,4 +14,4 @@ const App = () => {
   )
 };
 
-export default App;
+export default AppFunction;
